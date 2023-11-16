@@ -34,7 +34,7 @@ class AboutController extends Controller
         ]);
     }
 
-
+// permet de renvoyer tous les noms sans écrire le tableau en dur
     public function show($user) 
 {
     $users= collect($this->team)->pluck('name')->all();
