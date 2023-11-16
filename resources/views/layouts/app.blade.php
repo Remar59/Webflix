@@ -13,9 +13,7 @@
         <a href="/fiorella?color=bleu">Fiorella Bleue</a>
         <a href="/fiorella/emma">Fiorella et Emma</a>
         <a href="/fiorella/paul">Fiorella et Paul</a>
-        <a href="/a-propos/marina">Marina</a>
-        <a href="/a-propos/fiorella">Fiorella</a>
-        <a href="/a-propos/matthieu">Matthieu</a>
+        <a href="/a-propos">A propos</a>
 
     </nav>
 
