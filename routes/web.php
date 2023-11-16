@@ -33,3 +33,26 @@ Route::get('/fiorella/{friend?}', function (Request $request, $friend = null) {
         'friend' => ucfirst($friend), 
     ]);
 });
+
+Route::get('/a-propos/{user?}', function (Request $request, $user = null) {
+    return view('about', [
+        'title' => 'Webflix',
+        'team' => [
+            [
+                'name' => 'Fiorella',
+                'job' => 'Bébé',
+                'image' => 'https://i.pravatar.cc/150?u=ljghksghk'
+            ],
+            [
+                'name' => 'Marina',
+                'job' => 'Dev front',
+                'image' => 'https://i.pravatar.cc/150?u=lzkfhzlkfj'
+            ],
+            [
+                'name' => 'Matthieu',
+                'job' => 'Dev back',
+                'image' => 'https://i.pravatar.cc/150?u=ksjvghksjhdfk'
+            ]
+        ] 
+    ]);
+});
