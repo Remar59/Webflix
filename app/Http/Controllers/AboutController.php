@@ -11,17 +11,17 @@ class AboutController extends Controller
         [
             'name' => 'Fiorella',
             'job' => 'Bébé',
-            'image' => 'https://i.pravatar.cc/150?u=ljghksghk'
+            'image' => 'https://i.pravatar.cc/150?u=tata'
         ],
         [
             'name' => 'Marina',
             'job' => 'Dev front',
-            'image' => 'https://i.pravatar.cc/150?u=lzkfhzlkfj'
+            'image' => 'https://i.pravatar.cc/150?u=toto'
         ],
         [
             'name' => 'Matthieu',
             'job' => 'Dev back',
-            'image' => 'https://i.pravatar.cc/150?u=ksjvghksjhdfk'
+            'image' => 'https://i.pravatar.cc/150?u=titi'
         ]
         ];
     

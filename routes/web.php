@@ -1,9 +1,8 @@
 <?php
 
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\Categorycontroller;
 use App\Http\Controllers\HomeController;
-use Illuminate\Http\Request;
-use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,3 +26,10 @@ Route::get('/fiorella/{friend?}', [HomeController::class, 'friend']);
 Route::get('/a-propos', [AboutController::class, 'index']);
 
 Route::get('/a-propos/{user?}', [AboutController::class, 'show']);
+
+Route::get('/categories', [Categorycontroller::class, 'index']);
+
+//afficher le formulaire
+Route::get('/categories/creer', [Categorycontroller::class, 'create']);
+// traite le formulaire
+Route::post('/categories/creer', [Categorycontroller::class, 'store']);
