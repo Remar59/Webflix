@@ -25,7 +25,7 @@ class Categorycontroller extends Controller
     {
         //Regex qui permet de d'assurer ce qui est rentré dans le champs input
         $request->validate([
-            'name' => 'required|min:3|max:10|unique:categories',
+            'name' => 'required|min:3|max:10|unique:categories|between:3,10',
         ]);
 
         $category = new Category();

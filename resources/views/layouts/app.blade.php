@@ -3,23 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <title>Document</title>
 </head>
 <body>
 
-    <nav>
+    <nav class="bg-gray-800 border-gray-200 dark:bg-gray-900 text-white">
+        <div class="flex flex-wrap justify-between mx-auto max-w-screen-xl p-4">
         <a href="/">Accueil</a>
+        <a href="/categories">Catégories</a>
+        <a href="/movies">Films</a>
         <a href="/fiorella">Présentation</a>
-        <a href="/fiorella?color=bleu">Fiorella Bleue</a>
-        <a href="/fiorella/emma">Fiorella et Emma</a>
-        <a href="/fiorella/paul">Fiorella et Paul</a>
         <a href="/a-propos">A propos</a>
+        </div>
 
     </nav>
 
     @yield('content')
 
-    <footer>
+    <footer class="bg-gray-800 border-gray-200 dark:bg-gray-900 text-white">
         webflix &copy; {{ date('Y') }}
     </footer>
 </body>
