@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Movie;
 use Illuminate\Http\Request;
+use Illuminate\View\View;
 
 class MoviesController extends Controller
 {
@@ -41,5 +42,12 @@ class MoviesController extends Controller
         $movie->save(); // c'est le INSERT INTO en laravel
 
         return redirect('/movies');
+    }
+
+    public function show(Movie $movie)
+    {
+        return View('/movies/show', 
+        compact('movie')
+        );
     }
 }

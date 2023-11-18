@@ -40,3 +40,6 @@ Route::get('/movies', [MoviesController::class, 'index']);
 Route::get('/movies/creer', [MoviesController::class, 'create']);
 
 Route::post('/movies/creer', [MoviesController::class, 'store']);
+
+Route::get('/movies/{movie}', [MoviesController::class, 'show']);
+

@@ -9,7 +9,7 @@
 <body>
 
     <nav class="bg-gray-800 border-gray-200 dark:bg-gray-900 text-white">
-        <div class="flex flex-wrap justify-between mx-auto max-w-screen-xl p-4">
+        <div class="flex flex-wrap justify-between mx-auto max-w-screen-xl p-8">
         <a href="/">Accueil</a>
         <a href="/categories">Catégories</a>
         <a href="/movies">Films</a>
@@ -21,7 +21,7 @@
 
     @yield('content')
 
-    <footer class="bg-gray-800 border-gray-200 dark:bg-gray-900 text-white">
+    <footer class="bg-gray-800 border-gray-200 dark:bg-gray-900 text-white my-12 p-4 px-14">
         webflix &copy; {{ date('Y') }}
     </footer>
 </body>
